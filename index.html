@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rayan Adlrdard | Front-end Developer</title>
+  <link rel="stylesheet" href="/styles/style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" />
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>I'm Rayan Adlrdard <br><span class="highlight">Front-end</span> Developer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat feugiat placerat lobortis. Nataque rutrum semper sed suspendisse nunc lectus.</p>
+        <a href="#contact" class="btn-primary">Hire Me</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-section.png" alt="Hero Illustration" />
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <p class="section-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+      <div class="projects-grid">
+        <!-- Repeat this card for each project -->
+        <div class="project-card">
+          <img src="assets/card1.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>How To Make Flyer Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Awd and lorem ipsum...</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>MongoDB</span>
+              <span>Typescript</span>
+              <span>ReactJs</span>
+              <span>NextJs</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="recommendations">
+      <h2>Recommendations</h2>
+      <div class="recommendations-grid">
+        <!-- Repeat this card for each recommendation -->
+        <div class="recommendation-card">
+          <div class="stars">★★★★★</div>
+          <h4>Great Quality!</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+          <div class="user-info">
+            <img src="assets/u1.jpg" alt="User 1" />
+            <div>
+              <strong>James Gouse</strong>
+              <span>Graphic Designer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Add more recommendation cards as needed -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-form">
+        <h2>Leave ME Your Info</h2>
+        <form>
+          <input type="text" placeholder="Your Full Name (Required)" required>
+          <input type="email" placeholder="Your Email (Required)" required>
+          <input type="text" placeholder="Subject">
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <ul>
+          <li><strong>Country:</strong> Bangladesh</li>
+          <li><strong>City:</strong> Dhaka</li>
+          <li><strong>Street:</strong> 35 Vhatara, Badda</li>
+          <li><strong>Email:</strong> youremail@gmail.com</li>
+          <li><strong>Skype:</strong> @Yourusername</li>
+          <li><strong>Telegram:</strong> @Yourusername</li>
+          <li><strong>Support Services:</strong> 15369</li>
+          <li><strong>Office:</strong> +58 (021)3658 587 235</li>
+          <li><strong>Personal:</strong> +58 (021)3658 587 235</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Logo" />
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Portfolio</h4>
+          <ul>
+            <li>Frontend Development</li>
+            <li>Backend Development</li>
+            <li>Website Design</li>
+            <li>Machine Learning</li>
+            <li>Problem Solving & DSA</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="social-links">
+            <li><a href="#"><img src="assets/linkedin.png" alt="LinkedIn" /></a></li>
+            <li><a href="#"><img src="assets/insta.png" alt="Instagram" /></a></li>
+            <li><a href="#"><img src="assets/fb.png" alt="Facebook" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Copyright, All Right Reserved</p>
+    </div>
+  </footer>
+
+  <script src="/scripts/script.js"></script>
+</body>
+</html>
