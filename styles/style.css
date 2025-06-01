@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1rem;
     background: var(--light);
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
     position: sticky;
@@ -222,7 +222,8 @@
   .btn-primary {
     background: var(--primary);
     color: var(--dark);
-    padding: 0.8rem 2.5rem 0.8rem 1.8rem;
+    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+    font: var(--font-main);
     border: none;
     border-radius: 5px;
     font-weight: 600;
@@ -672,7 +673,7 @@
 
   footer {
     background: var(--gray);
-    padding: 0 0 1rem 0;
+    padding: 0 0 0.25rem 0;
     border-top: none;
     max-width: 100vw;
     overflow-x: hidden;
@@ -686,7 +687,7 @@
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    padding: 5rem 2rem 4rem 2rem;
+    padding: 2.5rem 2rem 2.5rem 2rem;
     flex-wrap: wrap;
   }
   
@@ -723,25 +724,25 @@
     align-items: flex-start;
     flex: 1 1 350px;
     max-width: 350px;
-    gap: 2.5rem;
+    gap: 2rem;
   }
   
   .footer-glasses {
     width: 140px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   .footer-ratings {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
     width: 100%;
   }
   
   .footer-rating-card {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
     background: transparent;
     border-radius: 0;
     padding: 0;
@@ -801,37 +802,43 @@
   .footer-socials {
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    /* gap: 2rem; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-top: 0.5rem; */
   }
   
   .footer-socials img {
-    width: 36px;
-    height: 36px;
-    margin-right: 0.8rem;
+    width: 100px;
+    height: 50px;
+    /* margin-right: 0; */
     vertical-align: middle;
     object-fit: contain;
+    transition: transform 0.2s;
   }
   
   .footer-socials a {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 1.15rem;
     font-weight: 500;
     color: #2d2d2d;
     gap: 0.6rem;
+    padding: 0.2rem;
   }
 
-  .footer-socials a:hover {
-    color: var(--primary);
+  .footer-socials a:hover img {
+    transform: scale(1.15);
   }
 
   .footer-bottom {
     text-align: center;
-    margin-top: 2.5rem;
+    /* margin-top: 1rem; */
     color: #666;
     font-size: 1.08rem;
     background: var(--gray);
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     font-weight: 400;
   }
   
@@ -977,20 +984,26 @@
     }
     
     .contact {
-      padding: 2rem 1rem;
+      padding: 2rem 0.5rem;
       flex-direction: column;
       gap: 2rem;
     }
-    
-    .contact-left,
-    .contact-right {
-      flex: none;
-      min-width: auto;
+    .contact-form, .contact-info {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 1.2rem 0.5rem;
+      margin: 0 auto;
+    }
+    .contact-left, .contact-right {
+      width: 100%;
+      min-width: 0;
     }
     
     .contact-left h2,
     .contact-right h2 {
       font-size: 1.8rem;
+      text-align: center;
     }
     
     .contact-info {
@@ -1010,7 +1023,7 @@
     .footer-top-logos {
       gap: 2rem;
       flex-wrap: wrap;
-      padding: 2.5rem 1rem 2rem 1rem;
+      padding: 1.5rem 1rem 1.5rem 1rem;
     }
     
     .footer-top-logos img {
@@ -1043,7 +1056,7 @@
       min-width: 140px;
     }
     .recommendations {
-      padding: 2.5rem 0 1.5rem 0;
+      padding: 1.5rem 0 1.5rem 0;
     }
     .recommendations-slider {
       padding-bottom: 60px;
@@ -1067,6 +1080,13 @@
     .project-card {
       min-width: calc(100vw - 2rem);
       max-width: calc(100vw - 1rem);
+    }
+    .footer-socials img {
+      width: 100px;
+      height: 40px;
+    }
+    .footer-socials {
+      gap: 1.2rem;
     }
   }
   
@@ -1167,6 +1187,8 @@
     }
     .nav-links.open {
       display: flex;
+      padding: 1rem 0.5rem;
+      border-radius: 10px;
     }
     .menu-toggle {
       display: flex;
