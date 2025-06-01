@@ -17,11 +17,12 @@ const swiper = new Swiper('.recommendations-slider', {
     prevEl: '.swiper-button-prev',
   },
   pagination: {
-    el: '.recommendations-pagination',
+    el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: false,
   },
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   keyboard: {
@@ -47,8 +48,23 @@ const swiper = new Swiper('.recommendations-slider', {
   }
 });
 
+// Close mobile menu when clicking on nav links
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
+  });
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   });
 });

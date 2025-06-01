@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rayan Adlrdard | Front-end Developer</title>
+  <title>Ansh Jain | Front-end Developer</title>
   <link rel="stylesheet" href="styles/style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -37,8 +38,15 @@
   <main>
     <!-- Hero Section -->
     <section id="home" class="hero">
+      <!-- Decorative Shapes -->
+      <div class="hero-shape-circle-green-right"></div>
+      <div class="hero-shape-circle-green-left"></div>
+      <div class="hero-shape-square-blue"></div>
+      <div class="hero-shape-square-yellow"></div>
+      <div class="hero-shape-triangle"></div>
+      
       <div class="hero-content">
-        <h1>I'm Rayan Adlrdard <br><span class="highlight">Front-end</span> Developer</h1>
+        <h1>I'm Ansh Jain <br><span class="highlight">Front-end</span> Developer</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat feugiat placerat lobortis. Nataque rutrum semper sed suspendisse nunc lectus.</p>
         <a href="#contact" class="btn-primary">Hire Me <span class="arrow">&#8594;</span></a>
       </div>
@@ -208,51 +216,58 @@
             </div>
           </div>
         </div>
-        <!-- Add Arrows -->
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-        <!-- Add Pagination -->
+        
         <div class="swiper-pagination recommendations-pagination"></div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <div class="contact-form">
+      <div class="contact-left">
         <h2>Leave ME Your Info</h2>
-        <form>
-          <input type="text" placeholder="Your Full Name (Required)" required>
-          <input type="email" placeholder="Your Email (Required)" required>
-          <input type="text" placeholder="Subject">
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Your Full Name (Required)" required>
+            <input type="email" placeholder="Your Email (Required)" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
       </div>
-      <div class="contact-info">
+      <div class="contact-right">
         <h2>Contact Information</h2>
-              <div class="contact-info-card">
-          <div class="contact-info-icon">📍</div>
-          <ul class="contact-info-list">
-            <li><strong>Country:</strong> <span>Bangladesh</span></li>
-            <li><strong>City:</strong> <span>Dhaka</span></li>
-            <li><strong>Street:</strong> <span>35 Vhatara, Badda</span></li>
-          </ul>
-        </div>
-        <div class="contact-info-card">
-          <div class="contact-info-icon">✉️</div>
-          <ul class="contact-info-list">
-            <li><strong>Email:</strong> <span>youremail@gmail.com</span></li>
-            <li><strong>Skype:</strong> <span>@Yourusername</span></li>
-            <li><strong>Telegram:</strong> <span>@Yourusername</span></li>
-          </ul>
-        </div>
-        <div class="contact-info-card">
-          <div class="contact-info-icon">ℹ️</div>
-          <ul class="contact-info-list">
-            <li><strong>Support Services:</strong> <span>15369</span></li>
-            <li><strong>Office:</strong> <span>+58 (021)3658 587 235</span></li>
-            <li><strong>Personal:</strong> <span>+58 (021)3658 587 235</span></li>
-          </ul>
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <ul class="contact-info-list">
+              <li><strong>Country:</strong> <span>India</span></li>
+              <li><strong>City:</strong> <span>Delhi</span></li>
+              <li><strong>Street:</strong> <span>Shahdara, Delhi-94</span></li>
+            </ul>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <ul class="contact-info-list">
+              <li><strong>Email:</strong> <span>anshjain9159@gmail.com</span></li>
+              <li><strong>Github:</strong> <span>@AnshJain9159</span></li>
+              <li><strong>Twitter:</strong> <span>@whoanshjain</span></li>
+            </ul>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <ul class="contact-info-list">
+              <li><strong>Support Services:</strong> <span>15369</span></li>
+              <li><strong>Office:</strong> <span>+91-7838996895</span></li>
+              <li><strong>Personal:</strong> <span>+91-7838996895</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -298,25 +313,25 @@
         <div class="footer-links-col">
           <h4>Portfolio</h4>
           <ul>
-            <li>Frontend Development</li>
-            <li>Backend Development</li>
-            <li>Website Design</li>
-            <li>Machine Learning</li>
-            <li>Problem Solving & DSA</li>
+            <li><a href="https://github.com/AnshJain9159">Frontend Development</a></li>
+            <li><a href="https://github.com/AnshJain9159">Backend Development</a></li>
+            <li><a href="https://github.com/AnshJain9159">Website Design</a></li>
+            <li><a href="https://github.com/AnshJain9159">Machine Learning</a></li>
+            <li><a href="https://github.com/AnshJain9159">Problem Solving & DSA</a></li>
           </ul>
         </div>
         <div class="footer-links-col">
           <h4>Connect</h4>
           <ul class="footer-socials">
-            <li><a href="#"><img src="assets/linkedin.png" alt="LinkedIn" /> LinkedIn</a></li>
-            <li><a href="#"><img src="assets/insta.png" alt="Instagram" /> Instagram</a></li>
-            <li><a href="#"><img src="assets/fb.png" alt="Facebook" /> Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/ansh-jain-78986b242/"><img src="assets/linkedin.png" alt="LinkedIn" /> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/who.anshjain/"><img src="assets/insta.png" alt="Instagram" /> Instagram</a></li>
+            <li><a href="https://www.facebook.com/anshjain9159"><img src="assets/fb.png" alt="Facebook" /> Facebook</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copyright"><span class="footer-copyright-icon">©</span> 2024 Copyright, All Right Reserved</span>
+      <span class="footer-copyright"><span class="footer-copyright-icon">©</span> 2025 Copyright, All Right Reserved</span>
     </div>
   </footer>
   <!-- Swiper JS -->
