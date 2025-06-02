@@ -48,7 +48,7 @@
       <div class="hero-content">
         <h1>I'm Ansh Jain <br><span class="highlight">Front-end</span> Developer</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat feugiat placerat lobortis. Nataque rutrum semper sed suspendisse nunc lectus.</p>
-        <a href="#contact" class="btn-primary">Hire Me <span class="arrow">&#8594;</span></a>
+        <button id="hire-me-btn" class="btn-primary">Hire Me <span class="arrow">&#8594;</span></button>
       </div>
       <div class="hero-image">
         <img src="assets/hero-section.png" alt="Hero Illustration" />
@@ -334,8 +334,34 @@
       <span class="footer-copyright"><span class="footer-copyright-icon">©</span> 2025 Copyright, All Right Reserved</span>
     </div>
   </footer>
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <div class="contact-modal" id="contact-modal">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    <div class="modal-content">
+      <h2>Get In Touch</h2>
+      <p>Thank you for your interest! Please fill out the form below and I'll get back to you soon.</p>
+      <form class="modal-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Company (Optional)" />
+        <textarea placeholder="Project Details" required></textarea>
+        <button type="submit" class="btn-primary modal-send">Send Message</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Contact Feedback Modal -->
+  <div class="modal-overlay" id="contact-feedback-overlay"></div>
+  <div class="contact-feedback-modal" id="contact-feedback-modal">
+    <div class="feedback-content">
+      <span class="feedback-icon">✔️</span>
+      <p id="feedback-message">Message sent successfully!</p>
+    </div>
+  </div>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="scripts/script.js"></script>
+
 </body>
 </html>
